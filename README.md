@@ -72,6 +72,13 @@ warping functions, you can test your PDF implementations by pressing the button
 at the bottom of the GUI. Each of your PDFs should evaluate to approximately
 1.0, by definition.
 
+Sphere Cap Warping
+------------
+PBRT does not explicitly explain how to constrain warped samples to a subsection
+of a sphere, so we'll give you a hint: consider the formula for the Z coordinate
+of a point on a sphere, and consider how to shrink its possible range based on
+some angle $\alpha$ between 0 and 180 degrees.
+
 Example Images
 -------------
 Below are images of the images you should expect to generate using 1024 samples
