@@ -7,7 +7,10 @@ Overview
 ------------
 You will implement a collection of functions in order to generate sample points
 on the surfaces of objects, which will help you to implement the beginning of
-your path tracer next week.
+your path tracer next week. Sampling the surfaces of different shapes is very
+important in a path tracer; not only does one have to cast rays in random
+directions within a hemisphere, but if one wants to sample rays to area
+lights, one needs to sample points on the surfaces of these lights.
 
 Please note that this assignment is, unfortunately, rather fill-in-the-blank.
 Its purpose is to help you test your sampling and probability functions, as
