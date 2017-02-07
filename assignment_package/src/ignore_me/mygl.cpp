@@ -178,7 +178,7 @@ int MyGL::computePDFs()
         sphereCapPDF += WarpFunctions::squareToSphereCapUniformPDF(glm::vec3(newSampler.peekSamples()[i], newSampler.peekSamples()[i+1], newSampler.peekSamples()[i+2]), sampler.thetaMax);
     }
     sphereCapPDF /= (newSampler.getNumSamples());
-    sphereCapPDF *= (M_PI * (1 - glm::cos(glm::radians(180 - sampler.thetaMax))));
+    sphereCapPDF *= (2 * M_PI * (1 - glm::cos(glm::radians(180 - sampler.thetaMax))));
 
     // Hemisphere (unif)
     newSampler.generateSamples(samples, sampleMode, HEMISPHERE_UNIFORM);
